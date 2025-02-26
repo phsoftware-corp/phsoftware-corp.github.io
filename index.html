@@ -1,23 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Redirect Page</title>
+    <title>Loading...</title>
 </head>
 <body>
     <script>
-        const redirectHtml = `
-            <html>
-            <head>
-                <meta http-equiv="refresh" content="0; url=index2.html">
-            </head>
-            <body>
-            </body>
-            </html>
-        `;
-
-        const blob = new Blob([redirectHtml], { type: "text/html" });
-        const blobUrl = URL.createObjectURL(blob);
-        window.open(blobUrl, "_self");
+        location.href = "/index2.html";
     </script>
 </body>
 </html>
